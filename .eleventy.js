@@ -147,10 +147,10 @@ const processImage = async (imgElem, options) => {
     imgElem.removeAttribute('srcset');
   }
 
-  if (!supportedExtensions.includes(fileExt.toLowerCase())) {
-    logMessage(`${fileExt} placeholder not supported: ${imgPath}`);
-    return;
-  }
+  //if (!supportedExtensions.includes(fileExt.toLowerCase())) {
+    //logMessage(`${fileExt} placeholder not supported: ${imgPath}`);
+    //return;
+  //}
 
   try {
     const image = await getImageData(imgPath);
